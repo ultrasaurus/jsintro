@@ -40,10 +40,10 @@
 var random = <span class="imp">[</span>'shoe',27,null,<span class="imp">[42,17,19]</span>,Math.PI<span class="imp">]</span>;
 </pre>
 <p>Easier (or harder) to read</p>
-<pre contenteditable>var nincompoops = [ 'Rush Limbaugh',
-                    'Sarah Palin',
-                    'Glenn Beck',
-                    'Rick Perry'];</pre>
+<pre contenteditable>var heroes = [ 'Anita Borg',
+                    'Barbara Liskov',
+                    'Fran Allen',
+                    'Emmy Noether'];</pre>
 <p>Old school</p>
 <pre contenteditable>
 var browsers = <span class="imp">new Array(</span>'Safari', 'Chrome', 'Explorer', 'FireFox', 'Opera'<span class="imp">)</span>;
@@ -58,11 +58,11 @@ var browsers = <span class="imp">new Array(</span>'Safari', 'Chrome', 'Explorer'
 <section class="content"> 
 <pre contenteditable>arrayName[index]</pre>
 <p>First Item</p>
-<pre contenteditable>nincompoops[0];</pre>
+<pre contenteditable>heroes[0];</pre>
 <p>Last Item</p>
-<pre contenteditable>nincompoops[nincompoops.length - 1];</pre>
+<pre contenteditable>heroes[heroes.length - 1];</pre>
 <p>Add item</p>
-<pre contenteditable>nincompoops[nincompoops.length] = 'Donald Trump';</pre>
+<pre contenteditable>heroes[heroes.length] = 'Adele Goldberg';</pre>
 </section>
 </div> 
 
@@ -71,15 +71,15 @@ var browsers = <span class="imp">new Array(</span>'Safari', 'Chrome', 'Explorer'
 <div class="slide normal"> 
 <header><h1>Array Methods: Adding Items</h1></header>
 <section class="content">
-<pre contenteditable>nincompoops[nincompoops.length] = 'Donald';</pre> 
+<pre contenteditable>heroes[heroes.length] = 'Grace';</pre>
 <p>Add to end:</p>
-<pre contenteditable> nincompoops.push('Rick');
- nincompoops<span class="imp">.push(</span>'Michelle', 'Newt', 'Mitt'<span class="imp">)</span>;</pre>
+<pre contenteditable> heroes.push('Rick');
+ heroes<span class="imp">.push(</span>'Ada', 'Marie', 'Hedy'<span class="imp">)</span>;</pre>
  <p>Add to beginning</p>
-<pre contenteditable>nincompoops<span class="imp">.unshift(</span>'Ron', 'Herman'<span class="imp">)</span>;</pre>
+<pre contenteditable>heroes<span class="imp">.unshift(</span>'Valerie', 'Kimberly'<span class="imp">)</span>;</pre>
 <p>Adding in the middle (based on index)</p>
 <pre contenteditable>
-nincompoops.splice(2,0,'Dick', 'George');
+heroes.splice(2,0,'Desi', 'Nola');
 </pre>
 <small>Note: 0 is # to delete</small>
 </section>
@@ -92,15 +92,15 @@ nincompoops.splice(2,0,'Dick', 'George');
 <section class="content">
 <p>Delete last item</p> 
 <pre contenteditable>
-var lastItem = nincompoops.pop();
+var lastItem = heroes.pop();
 </pre>
 <p>Delete first item</p> 
 <pre contenteditable>
-var firstItem = nincompoops.shift();
+var firstItem = heroes.shift();
 </pre>
 <p>Delete based on index</p>
 <pre contenteditable>
-var deletedItem = nincompoops.splice(2,1);
+var deletedItem = heroes.splice(2,1);
 </pre>
 </section>
 </div> 
